@@ -1,12 +1,23 @@
+function calcMedia(){
+    return(this.nota[0] + this.nota[1]) /2;
+}
+
 var aluno = {
     nome: "Igor",
-    notas:[7,8]
-};
+    notas: [5, 8],
 
-var aluno2 = {
-    nome:"José",
-    notas:[5,4]
-};
+    media: calcMedia
+}
 
-console.log(aluno);
-console.log(aluno2);
+var aluno1 = {
+    nome:"João",
+    notas:[7, 9],
+
+    media: calcMedia
+}
+
+console.log(aluno.nome)
+console.log(aluno.media());
+
+console.log(aluno1.nome)
+console.log(aluno1.media());
